@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orvyn</title>
+    <meta name="description" content="Cryptographic Attribution & Immutable Decryption Provenance for Multi-Recipient Encrypted Document Distribution." />
+    <meta property="og:title" content="Orvyn" />
+    <meta property="og:description" content="Cryptographic Attribution & Immutable Decryption Provenance for Multi-Recipient Encrypted Document Distribution." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" crossorigin href="./assets/index.css">
+  </head>
+  <body class="bg-[#090d16] text-slate-100 antialiased selection:bg-cyan-500/30 selection:text-cyan-200">
+    <div id="root"></div>
+    <script type="module">
+      const isDev = window.location.hostname.includes('run.app') || 
+                    window.location.hostname === 'localhost' || 
+                    window.location.port === '3000';
+      if (isDev) {
+        import('/src/main.tsx');
+      } else {
+        import('./assets/index.js');
+      }
+    </script>
+  </body>
+</html>
+
+

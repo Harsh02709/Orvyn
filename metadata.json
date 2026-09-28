@@ -1,0 +1,6 @@
+{
+  "name": "Orvyn",
+  "description": "Cryptographic Attribution & Immutable Decryption Provenance for Multi-Recipient Encrypted Document Distribution.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
